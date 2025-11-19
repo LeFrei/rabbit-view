@@ -26,13 +26,13 @@
 <h1 class="text-3xl">Our Rabbits</h1>
 
 <div class="grid w-[200px] grid-cols-[32px_1fr_32px_32px] items-end">
-	<div>ID</div>
+	<div>Nr.</div>
 	<div>Name</div>
 	<div></div>
 	<div></div>
 
-	{#each store.rabbits as rabbit}
-		<div class="pr-3 text-right">{rabbit.id}</div>
+	{#each store.rabbits as rabbit, index}
+		<div class="pr-3 text-right">{index + 1}</div>
 		<div class="pr-3">{rabbit.name}</div>
 		<div class="pr-3">
 			<button
